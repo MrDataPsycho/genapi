@@ -6,6 +6,12 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "fastapi>=0.115.6",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
+    "streamlit>=1.40.2",
+    "transformers[torch]>=4.47.0",
+    "uvicorn>=0.32.1",
+    "watchdog>=6.0.0",
 ]
 
 [project.scripts]
@@ -14,3 +20,8 @@ genapi = "genapi:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "ipykernel>=6.29.5",
+]
